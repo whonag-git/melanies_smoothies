@@ -4,9 +4,9 @@ from snowflake.snowpark.functions import col
 
 
 # Write directly to the app
-st.title('My parents new healthy diner')
+st.title(f":cup_with_straw: Customize Your Smoothie! :cup_with_straw:")
 st.write(
-  """Breakfast Menu"""
+  """Choose the fruits you want in your custom Smoothie"""
 )
 
 name_on_order = st.text_input('Name on Smoothie')
