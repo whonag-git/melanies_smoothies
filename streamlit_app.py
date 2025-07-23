@@ -24,7 +24,7 @@ connection_parameters = {
 }
 
 session = Session.builder.configs(connection_parameters).create()
-my_dataframe = session.table("smoothies.public.fruit_options").select(col('Fruit_Name'))
+my_dataframe = session.table("smoothies.public.fruit_options").select(col('Fruit_Name'), col('Search_On'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
 
 ingredients_list = st.multiselect(
